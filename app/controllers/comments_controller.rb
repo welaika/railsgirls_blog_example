@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  before_action :set_post, only: [:create]
+  before_action :set_post, only: [:create, :edit, :update]
   before_action :set_comment, only: [:edit, :update, :destroy]
 
 
@@ -18,7 +18,7 @@ class CommentsController < ApplicationController
 
   def update
     if @comment.update(comment_params)
-      redirect_to @comment, notice: 'Comment was successfully updated.'
+      redirect_to @post, notice: 'Comment was successfully updated.'
     else
       render :edit
     end
