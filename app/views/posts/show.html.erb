@@ -15,8 +15,11 @@
 <ul>
   <% @post.comments.each do |comment| %>
     <li>
-      <%= comment.body %>
-      <%= link_to 'Edit', edit_post_comment_path(post_id: @post.id, id: comment.id) %>
+      <p><%= comment.body %></p>
+      <div>
+        <%= link_to 'Edit', edit_post_comment_path(post_id: @post.id, id: comment.id) %>
+        <%= button_to 'Destroy', post_comment_path(post_id: @post.id, id: comment.id), method: :delete %>
+      </div>
     </li>
   <% end %>
 </ul>
