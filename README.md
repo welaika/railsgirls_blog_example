@@ -1,24 +1,22 @@
-# README
+# Blog Example for RailsGirls Verona 10th April 2019
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup
 
-Things you may want to cover:
+L'applicazione e' stata creata usando ruby `2.6.2`, se non l'hai gia' installato sul tuo computer esegui:
 
-* Ruby version
+```bash
+$ rbenv install 2.6.2
+```
 
-* System dependencies
+Fai il clone della applicazione:
 
-* Configuration
+```bash
+$ git clone https://github.com/welaika/railsgirls_blog_example.git`
+```
 
-* Database creation
+Entra dentro la cartella ed esegui il setup:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+$ cd railsgirls_blog_example
+$ bin/setup
+```
